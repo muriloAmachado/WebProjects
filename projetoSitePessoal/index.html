@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/442bfa36dc.js" crossorigin="anonymous"></script>
     <title>Página pessoal</title>
 </head>
     <header>
@@ -34,10 +35,16 @@
                 <div class="descricaoPerfil">
                     <h4>Murilo Andrade Machado</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde temporibus recusandae laboriosam suscipit nemo esse eligendi molestias commodi facere velit architecto consequatur dolore neque officia aut ex, expedita, tenetur provident, aspernatur itaque? Iste optio unde minus natus ullam dolorem et aliquam, quibusdam maiores quo accusamus reiciendis laudantium labore incidunt fugiat quae officia asperiores, dolores deleniti at adipisci sunt. Necessitatibus nisi harum excepturi facilis saepe voluptate amet rem dolore vero! Rerum eius illo, aperiam aspernatur molestiae excepturi tenetur, aliquid magni neque qui odio in veniam sit minima nisi, a vitae blanditiis voluptatem voluptas pariatur perferendis quibusdam cumque. Officia rerum eos quam quod odit corporis fugiat sequi distinctio facere iure minus unde porro culpa, soluta nemo deleniti. Aperiam ullam suscipit laudantium reprehenderit ex necessitatibus nobis nesciunt magnam beatae officia aliquid maxime non aspernatur iusto eos, earum debitis fugiat, at ipsum amet! Natus quod quam odio illum porro, dolor, facilis possimus aperiam voluptas reprehenderit in eum magnam? Totam molestiae aut in tempora expedita numquam doloribus natus nostrum labore fugiat cupiditate facere ipsa laboriosam excepturi nulla repellendus amet aliquid, quasi at! Minima odio alias nam, rerum labore nobis. Aspernatur facere eos esse dignissimos eaque repellat natus quod sequi tenetur ducimus? Nulla, aperiam consequatur!</p>
-                    <p>
-                    Belo Horizonte, MG, Brasil.<br>
-                    Sites: <a href="https://www.linkedin.com/in/murilo-andrade-machado-a3b763293/">https://www.linkedin.com/in/murilo-andrade-machado-a3b7632</a><br><a href="https://github.com/muriloAmachado">https://github.com/muriloAmachado</a>
-                    </p>
+                    <div class="local">
+                        <div>
+                            <p>Belo Horizonte, MG, Brasil.</p>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-user fs-2"> 10</i>
+                        </div>
+                    </div>
+                    
+                    <p>Sites: <a href="https://www.linkedin.com/in/murilo-andrade-machado-a3b763293/">https://www.linkedin.com/in/murilo-andrade-machado-a3b7632</a><br><a href="https://github.com/muriloAmachado">https://github.com/muriloAmachado</a></p>
                 </div>
             </div>
         </section>
@@ -45,19 +52,93 @@
         <section id="repositorios">
             <h2>Repositórios</h2>
             <hr>
+            <div id="gridRepo">
+                <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                      <div class="card">
+
+                        <div class="card-body">
+                          <h5 class="card-title">WebProjects</h5>
+                          <hr>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">aeds-C</h5>
+                          <hr>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+
+                        <div class="card-body">
+                          <h5 class="card-title">PastoralsCoffee</h5>
+                          <hr>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card">
+
+                        <div class="card-body">
+                          <h5 class="card-title">EcoGuard</h5>
+                          <hr>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
 
 
             
         </section>
 
-        <section>
+        <section id="conteudoSugerido">
             <h2>Conteúdo sugerido</h2>
             <hr>
+            
+                <div id="carouselExampleIndicators" class="carousel slide align-items-center" data-bs-ride="carousel" style="height: 600px; width: auto">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner w-auto" style="height: 100%; width: auto">
+                      <div class="carousel-item active">
+                        <img src="assets/img/cinformation.png" class="d-block w-100" style="height: auto" alt="Informativo C#">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/scrum.png" class="d-block w-100" style="height: auto" alt="Desenvolvimento Web">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/img/devweb.jpg" class="d-block w-100" style="height: 600px" alt="Desenvolvimento Web">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+          
         </section>
 
         <section>
             <h2>Colegas de trabalho</h2>
             <hr>
+
+            
+
         </section>
     </main>
 
@@ -70,5 +151,6 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
