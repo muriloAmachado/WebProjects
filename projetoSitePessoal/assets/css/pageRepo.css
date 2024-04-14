@@ -1,0 +1,15 @@
+.descricaoPerfil{
+    margin: 0;
+    padding: 0;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+h5{
+    color: blue;
+}
+
+.fa-solid.fa-user{
+    margin-top: 8px;
+
+}

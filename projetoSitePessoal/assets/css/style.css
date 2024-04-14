@@ -99,6 +99,18 @@ p{
     text-align: justify;
 }
 
+.fa-brands.fa-twitter.fs-2{
+    margin-left: 16px;
+}
+
+.fa-brands.fa-instagram.fs-2{
+    margin-left: 16px;
+}
+
+.fa-brands.fa-github.fs-2{
+    margin-left: 16px;
+}
+
 /* ------------- Repositorios --------- */
 
 div a{
