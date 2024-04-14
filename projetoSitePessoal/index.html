@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +11,38 @@
     <script src="https://kit.fontawesome.com/442bfa36dc.js" crossorigin="anonymous"></script>
     <title>Página pessoal</title>
 </head>
-    <header>
-        <h1><a href="index.html">Murilo Andrade</a></h1>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light w-100 mb-3 px-3 d-flex" style="background-color: #5cc8ff">
+      <div class="container-fluid">
+        <h1><a class="navbar-brand" style="font-size: 2.0rem" href="index.html">Murilo Andrade</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse d-flexbox justify-content-end w-100" id="navbarNavAltMarkup">
+          <div class="navbar-nav w-50 justify-content-evenly">
+            <a class="nav-link" aria-current="page" href="#perfil">Perfil</a>
+            <a class="nav-link" href="#repositorios">Repositórios</a>
+            <a class="nav-link" href="#conteudoSugerido">Conteúdo sugerido</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <nav>
-            <ul>
-                <a href="#perfil"><li>Perfil</li></a>
-                <a href="#perfil"><li>Repositórios</li></a>
-                <a href="#perfil"><li>Conteúdo sugerido</li></a>
-            </ul>
-        </nav>
-    </header>
 
     <main>
         <section id="perfil">
             <h2>Perfil</h2>
             <hr>
             <div class="conteudo">
-                <div>
-                    <img src="assets/img/perfil.png" alt="" height="400" width="400">
+                <div class="fotoEu">
+                    <img src="assets/img/perfil.png" alt="Foto Murilo" height="350" width="350">
                 </div>
-                
                 <div class="descricaoPerfil">
                     <h4>Murilo Andrade Machado</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam unde temporibus recusandae laboriosam suscipit nemo esse eligendi molestias commodi facere velit architecto consequatur dolore neque officia aut ex, expedita, tenetur provident, aspernatur itaque? Iste optio unde minus natus ullam dolorem et aliquam, quibusdam maiores quo accusamus reiciendis laudantium labore incidunt fugiat quae officia asperiores, dolores deleniti at adipisci sunt. Necessitatibus nisi harum excepturi facilis saepe voluptate amet rem dolore vero! Rerum eius illo, aperiam aspernatur molestiae excepturi tenetur, aliquid magni neque qui odio in veniam sit minima nisi, a vitae blanditiis voluptatem voluptas pariatur perferendis quibusdam cumque. Officia rerum eos quam quod odit corporis fugiat sequi distinctio facere iure minus unde porro culpa, soluta nemo deleniti. Aperiam ullam suscipit laudantium reprehenderit ex necessitatibus nobis nesciunt magnam beatae officia aliquid maxime non aspernatur iusto eos, earum debitis fugiat, at ipsum amet! Natus quod quam odio illum porro, dolor, facilis possimus aperiam voluptas reprehenderit in eum magnam? Totam molestiae aut in tempora expedita numquam doloribus natus nostrum labore fugiat cupiditate facere ipsa laboriosam excepturi nulla repellendus amet aliquid, quasi at! Minima odio alias nam, rerum labore nobis. Aspernatur facere eos esse dignissimos eaque repellat natus quod sequi tenetur ducimus? Nulla, aperiam consequatur!</p>
+                    <p>Me chamo Murilo, tenho 20 anos, nascido e criado em Belo Horizonte. Atualmente estou cursando Engenharia de Software na PUC Minas e faço estágio de suporte técnico em uma empresa de tecnologia com foco no ramo de Engenharia Civil que se chama 90 TI. Tenho um interesse maior pela área de back-end, onde posso trabalhar nos bastidores para garantir o funcionamento suave e eficiente das aplicações. Gosto do desafio de lidar com os aspectos mais complexos e fundamentais do desenvolvimento de software, buscando soluções robustas e escaláveis que impulsionem a experiência do usuário.<br>
+                    Meus hobbies incluem tocar violão, guitarra e baixo. Sou apaixonado por música. Além disso, sou faixa preta em taekwondo e adoro atividades físicas, mantendo-me ativo sempre que possível. Estou constantemente buscando o equilíbrio entre minha paixão pela tecnologia e meu amor pela música e pelo bem-estar físico.</p>
                     <div class="local">
                         <div>
                             <p>Belo Horizonte, MG, Brasil.</p>
@@ -43,12 +51,11 @@
                             <i class="fa-solid fa-user fs-2"> 4</i>
                         </div>
                     </div>
-                      <p>Site: <a href="https://www.linkedin.com/in/murilo-andrade-machado-a3b763293/">https://www.linkedin.com/in/murilo-andrade-machado-a3b7632</a></p>
+                      <p id="site">Site: <a href="https://www.linkedin.com/in/murilo-andrade-machado-a3b763293/">https://www.linkedin.com/in/murilo-andrade-machado-a3b7632</a></p>
                       <div>
-                        <a href="https://www.instagram.com/murilo.am/?hl=pt-br"><i class="fa-brands fa-facebook fs-2"></a></i>
+                        <a href="https://github.com/muriloAmachado"><i class="fa-brands fa-github fs-2"></a></i>
                         <a href="https://www.instagram.com/murilo.am/?hl=pt-br"><i class="fa-brands fa-twitter fs-2"></a></i>
                         <a href="https://www.instagram.com/murilo.am/?hl=pt-br"><i class="fa-brands fa-instagram fs-2"></a></i>
-                        <a href="https://github.com/muriloAmachado"><i class="fa-brands fa-github fs-2"></a></i>
                       </div>
                     </div>
             </div>
@@ -58,14 +65,14 @@
             <h2>Repositórios</h2>
             <hr>
             <div id="gridRepo">
-                <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
                     <a href="webProjects.html">
                         <div class="col">
                             <div class="card">
                                 <div class="card-body">
                                     <h5 class="card-title">WebProjects</h5>
                                     <hr>
-                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text">Este repositório é onde armazeno as atividades e projetos de aplicações Web desenvolvidos durante minha jornada na faculdade de engenharia de software.</p>
                                     <div class="icons">
                                         <i class="fa-solid fa-star"> 2</i>
                                         <i class="fa-solid fa-user"> 3</i>
@@ -74,71 +81,75 @@
                             </div>
                         </div>
                     </a>
-
-                    <div class="col">
-                      <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">aeds-C</h5>
-                          <hr>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="aedsC.html">
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">aeds-C</h5>
+                            <hr>
+                            <p class="card-text">Neste repositório armazeno minhas atividades voltadas para a matéria de AED. Nele contém algoritmos desenvolvidos em C, para praticar o que foi aprendido durante as aulas.</p>
                             <div class="icons">
-                                <i class="fa-solid fa-star"> 2</i>
-                                <i class="fa-solid fa-user"> 3</i>
+                              <i class="fa-solid fa-star"> 2</i>
+                              <i class="fa-solid fa-user"> 3</i>
                             </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
+                    </a>
+                    <a href="pastoralsCoffee.html">
+                      <div class="col">
+                        <div class="card">
 
-                        <div class="card-body">
-                          <h5 class="card-title">PastoralsCoffee</h5>
-                          <hr>
-                          <p class="card-text">This is a lhttps://github.com/muriloAmachadonger card with supporting text below as a natural lead-in to additional content.</p>
-                            <div class="icons">
-                                <i class="fa-solid fa-star"> 2</i>
-                                <i class="fa-solid fa-user"> 3</i>
-                            </div>
+                          <div class="card-body">
+                            <h5 class="card-title">PastoralsCoffee</h5>
+                            <hr>
+                            <p class="card-text">Este repositório foi criado com o intuito de ser um repositório coletivo, onde eu e meus colegas de curso 'commitamos' alguns exercícios relacionados as aulas.</p>
+                              <div class="icons">
+                                  <i class="fa-solid fa-star"> 2</i>
+                                  <i class="fa-solid fa-user"> 3</i>
+                              </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col">
-                      <div class="card">
-
-                        <div class="card-body">
-                          <h5 class="card-title">EcoGuard</h5>
-                          <hr>
-                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="icons">
-                                <i class="fa-solid fa-star"> 2</i>
-                                <i class="fa-solid fa-user"> 3</i>
-                            </div>
+                    </a>
+                    <a href="ecoGuard.html">
+                      <div class="col">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">EcoGuard</h5>
+                            <hr>
+                            <p class="card-text">Este repositório contém um projeto que foi desenvolvido para a entrega de um trabalho de faculdade.</p>
+                              <div class="icons">
+                                  <i class="fa-solid fa-star"> 1</i>
+                                  <i class="fa-solid fa-user"> 4</i>
+                              </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section id="conteudoSugerido">
             <h2>Conteúdo sugerido</h2>
             <hr>
-
+              <div id="carrouselConteudo">
                 <div id="carouselExampleIndicators" class="carousel slide align-items-center" data-bs-ride="carousel" style="height: auto; width: auto">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="carousel-inner w-auto" style="height: auto; width: auto">
+                    <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="assets/img/cinformation.png" class="d-block w-100" style="height: 600px" alt="Informativo C#">
+                        <img src="assets/img/cinformation.png" class="d-block w-100" alt="Informativo C#">
                       </div>
                       <div class="carousel-item">
-                        <img src="assets/img/scrum.png" class="d-block w-100" style="height: 600px" alt="Desenvolvimento Web">
+                        <img src="assets/img/scrum.png" class="d-block w-100"  alt="Desenvolvimento Web">
                       </div>
                       <div class="carousel-item">
-                        <img src="assets/img/devweb.jpg" class="d-block w-100" style="height: 600px" alt="Desenvolvimento Web">
+                        <img src="assets/img/devweb.jpg" class="d-block w-100"  alt="Desenvolvimento Web">
                       </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -150,33 +161,43 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                   </div>
-
+                </div>
         </section>
 
         <section id="colegasTrabalho">
             <h2>Colegas de Trabalho</h2>
             <hr>
             <div class="picture">
-              <div>
-                <img src="assets/img/pedro.jpg" alt="">
-                <figcaption>Pedro</figcaption>
-              </div>
-              <div>
-                <img src="assets/img/otavio.jpeg" alt="">
-                <figcaption>Otávio</figcaption>
-              </div>
-              <div>
-                <img src="assets/img/bruno.jpeg" alt="">
-                <figcaption>Bruno</figcaption>
-              </div>
-              <div>
-                <img src="assets/img/matheus.jpeg" alt="">
-                <figcaption>Matheus</figcaption>
-              </div>
-              <div>
-                <img src="assets/img/rafael.jpeg" alt="">
-                <figcaption>Rafael</figcaption>
-              </div>
+              <a href="https://github.com/pedroMontandon">
+                <div>
+                  <img src="assets/img/pedro.jpg" alt="">
+                  <figcaption>Pedro</figcaption>
+                </div>
+              </a>
+              <a href="https://github.com/otaviochaves05">
+                <div>
+                  <img src="assets/img/otavio.jpeg" alt="">
+                  <figcaption>Otávio</figcaption>
+                </div>
+              </a>
+              <a href="https://github.com/BrunoAlves-Coelho">
+                <div>
+                  <img src="assets/img/bruno.jpeg" alt="">
+                  <figcaption>Bruno</figcaption>
+                </div>
+              </a>
+              <a href="https://github.com/matheustitton">
+                <div>
+                  <img src="assets/img/matheus.jpeg" alt="">
+                  <figcaption>Matheus</figcaption>
+                </div>
+              </a>
+              <a href="https://github.com/RafaelDePaiva">
+                <div>
+                  <img src="assets/img/rafael.jpeg" alt="">
+                  <figcaption>Rafael</figcaption>
+                </div>
+              </a>
             </div>
         </section>
     </main>
