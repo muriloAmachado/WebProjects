@@ -36,6 +36,10 @@ section{
     display: flex;
 }
 
+.fotoEu img{
+    border-radius: 80%;
+}
+
 section h2{
     padding-left: 12px;
 }
