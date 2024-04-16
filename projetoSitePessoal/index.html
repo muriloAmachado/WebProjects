@@ -134,34 +134,61 @@
         <section id="conteudoSugerido">
             <h2>Conteúdo sugerido</h2>
             <hr>
-              <div id="carrouselConteudo">
-                <div id="carouselExampleIndicators" class="carousel slide align-items-center" data-bs-ride="carousel" style="height: auto; width: auto">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="assets/img/cinformation.png" class="d-block w-100" alt="Informativo C#">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/img/scrum.png" class="d-block w-100"  alt="Desenvolvimento Web">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/img/devweb.jpg" class="d-block w-100"  alt="Desenvolvimento Web">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+            <div id="carouselExampleCaptions" class="carousel slide carousel-dark" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="/assets/img/devweb.jpg" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Tecnologias Web</h5>
+                    <p>A web é uma rede global de informações na internet, e o desenvolvimento web é a criação de sites e aplicativos para serem acessados por meio de navegadores. Isso envolve usar linguagens como HTML, CSS e JavaScript para construir interfaces online.</p>
                   </div>
                 </div>
+                <div class="carousel-item">
+                  <img src="assets/img/cinformation.png" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>.NET e a Orientção Objeto</h5>
+                    <p>C# é uma linguagem de programação versátil da Microsoft, usada para desenvolver uma variedade de aplicativos. Ela se baseia na orientação a objetos, que organiza o código em torno de "objetos" com propriedades e comportamentos, facilitando a reutilização e a manutenção do código.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/scrum.png" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Metodologia Scrum</h5>
+                    <p>O Scrum é uma metodologia ágil de desenvolvimento de software baseada em ciclos de trabalho chamados sprints. Ele enfatiza a colaboração, a flexibilidade e a entrega contínua de valor ao cliente. Com papéis definidos e reuniões regulares, o Scrum permite uma abordagem adaptativa para lidar com mudanças de requisitos e prioridades durante o projeto.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/frontEnd.jpg" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Desenvolvimento Front-End</h5>
+                    <p>
+                      Desenvolvimento front-end é a criação da interface visual e interativa de sites e aplicativos, usando tecnologias como HTML, CSS e JavaScript. Os desenvolvedores front-end garantem que a interface seja responsiva, esteticamente agradável e funcione de forma intuitiva em diferentes dispositivos e navegadores. Eles colaboram com designers e desenvolvedores back-end para integrar o design com a funcionalidade, criando uma experiência de usuário coesa.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/img/localNuvem.jpg" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Local e Nuvem</h5>
+                    <p>A nuvem é um ambiente remoto de computação acessado pela internet, oferecendo recursos sob demanda. O "local" refere-se à infraestrutura física interna de uma organização. A nuvem proporciona flexibilidade e escalabilidade, enquanto o local oferece controle direto e conformidade com requisitos específicos.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
         </section>
 
         <section id="colegasTrabalho">
