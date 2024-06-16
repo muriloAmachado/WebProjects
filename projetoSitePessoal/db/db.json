@@ -1,6 +1,67 @@
 {
-    "teste":{
-        "oi": 1,
-        "haha": "teste"
-    }
+    "conteudoSugerido":[
+        {
+            "id": 1,
+            "titulo": "a",
+            "descricao": "a",
+            "capa": "a",
+            "linkConteudo": ""
+        },
+        {
+            "id": 2,
+            "titulo": "a",
+            "descricao": "a",
+            "capa": "a",
+            "linkConteudo": ""
+        },
+        {
+            "id": 3,
+            "titulo": "a",
+            "descricao": "a",
+            "capa": "a",
+            "linkConteudo": ""
+        },
+        {
+            "id": 2,
+            "titulo": "a",
+            "descricao": "a",
+            "capa": "a",
+            "linkConteudo": ""
+        }
+    
+    ],
+
+    "colegas":[
+        {
+            "id": 1,
+            "foto": "a",
+            "nome": "Otávio",
+            "linkGithub": ""
+        },
+        {
+            "id": 2,
+            "foto": "a",
+            "nome": "Otávio",
+            "linkGithub": ""
+        },
+        {
+            "id": 3,
+            "foto": "a",
+            "nome": "Otávio",
+            "linkGithub": ""
+        },
+        {
+            "id": 4,
+            "foto": "a",
+            "nome": "Otávio",
+            "linkGithub": ""
+        },
+        {
+            "id": 5,
+            "foto": "a",
+            "nome": "Otávio",
+            "linkGithub": ""
+        }
+    
+    ]
 }
