@@ -5,7 +5,7 @@ import { getDbJson } from "../service/service.js";
 const perfil = async () => {
     return await getGitHub();
 }
-const repositorios = async () => {
+export const repositorios = async () => {
     return await getRepoGitHub();
 }
 const getClassmates = async () => {
@@ -65,20 +65,24 @@ window.onload = async () => {
           if(i==0){
           content += 
             `<div class="carousel-item active">
+            <a href="${conteudo.linkConteudo}">
             <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
             <div class="carousel-caption d-none d-md-block">
             <h5>${conteudo.titulo}</h5>
             <p>${conteudo.descricao}</p>
             </div>
+            </a>
             </div>`
           } else{
             content += 
             `<div class="carousel-item">
+            <a href="${conteudo.linkConteudo}">
             <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
             <div class="carousel-caption d-none d-md-block">
             <h5>${conteudo.titulo}</h5>
             <p>${conteudo.descricao}</p>
             </div>
+            </a>
             </div>`
           }
       }
