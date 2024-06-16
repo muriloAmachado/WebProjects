@@ -71,8 +71,7 @@ window.onload = async () => {
             <p>${conteudo.descricao}</p>
             </div>
             </div>`
-          }
-          else{
+          } else{
             content += 
             `<div class="carousel-item">
             <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
