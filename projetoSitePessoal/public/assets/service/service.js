@@ -6,9 +6,6 @@ export const getGitHub = async () =>{
     if (!response.ok){
         console.log("Erro ao carregar os dados.")
     }
-    else{
-        console.log(response);
-    }
     const data = await response.json();
     return data;
 }
@@ -17,9 +14,6 @@ export const getRepoGitHub = async () =>{
     const response = await fetch(repoUrl);
     if (!response.ok){
         console.log("Erro ao carregar os dados.")
-    }
-    else{
-        console.log(response);
     }
     const data = await response.json();
     return data;
@@ -31,16 +25,6 @@ export const getDbJson = async (e) => {
     if (!response.ok){
         console.log("Erro ao carregar os dados.")
     }
-    else{
-        console.log(response);
-    }
     const data = await response.json();
     return data
 }
-
-window.onload = getDbJson();
-
-
-
-
-

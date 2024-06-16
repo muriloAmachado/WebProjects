@@ -17,19 +17,22 @@
         {
             "id": 3,
             "titulo": "Metodologia Scrum",
-            "descricao": "O Scrum é uma metodologia ágil de desenvolvimento de software baseada em ciclos de trabalho chamados sprints. Ele enfatiza a colaboração, a flexibilidade e a entrega contínua de valor ao cliente. Com papéis definidos e reuniões regulares, o Scrum permite uma abordagem adaptativa para lidar com mudanças de requisitos e prioridades durante o projeto.","capa": "assets/img/scrum.png",
+            "descricao": "O Scrum é uma metodologia ágil de desenvolvimento de software baseada em ciclos de trabalho chamados sprints. Ele enfatiza a colaboração, a flexibilidade e a entrega contínua de valor ao cliente. Com papéis definidos e reuniões regulares, o Scrum permite uma abordagem adaptativa para lidar com mudanças de requisitos e prioridades durante o projeto.",
+            "capa": "assets/img/scrum.png",
             "linkConteudo": ""
         },
         {
             "id": 2,
             "titulo": "Desenvolvimento Front-End",
-            "descricao": "Desenvolvimento front-end é a criação da interface visual e interativa de sites e aplicativos, usando tecnologias como HTML, CSS e JavaScript. Os desenvolvedores front-end garantem que a interface seja responsiva, esteticamente agradável e funcione de forma intuitiva em diferentes dispositivos e navegadores. Eles colaboram com designers e desenvolvedores back-end para integrar o design com a funcionalidade, criando uma experiência de usuário coesa.","capa": "assets/img/frontEnd.jpg",
+            "descricao": "Desenvolvimento front-end é a criação da interface visual e interativa de sites e aplicativos, usando tecnologias como HTML, CSS e JavaScript. Os desenvolvedores front-end garantem que a interface seja responsiva, esteticamente agradável e funcione de forma intuitiva em diferentes dispositivos e navegadores. Eles colaboram com designers e desenvolvedores back-end para integrar o design com a funcionalidade, criando uma experiência de usuário coesa.",
+            "capa": "assets/img/frontEnd.jpg",
             "linkConteudo": ""
         },
         {
             "id": 2,
             "titulo": "Local e Nuvem",
-            "descricao": "A nuvem é um ambiente remoto de computação acessado pela internet, oferecendo recursos sob demanda. O 'local' refere-se à infraestrutura física interna de uma organização. A nuvem proporciona flexibilidade e escalabilidade, enquanto o local oferece controle direto e conformidade com requisitos específicos.","capa": "assets/img/localNuvem.jpg",
+            "descricao": "A nuvem é um ambiente remoto de computação acessado pela internet, oferecendo recursos sob demanda. O 'local' refere-se à infraestrutura física interna de uma organização. A nuvem proporciona flexibilidade e escalabilidade, enquanto o local oferece controle direto e conformidade com requisitos específicos.",
+            "capa": "assets/img/localNuvem.jpg",
             "linkConteudo": ""
         }
     ],

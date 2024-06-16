@@ -2,25 +2,26 @@ import { getGitHub } from "../service/service.js";
 import { getRepoGitHub } from "../service/service.js";
 import { getDbJson } from "../service/service.js";
 
-getDbJson();
-
 const perfil = async () => {
     return await getGitHub();
 }
 const repositorios = async () => {
     return await getRepoGitHub();
 }
-
-const loadDb = async () => {
+const getClassmates = async () => {
   return await getDbJson('colegas');
+}
+const getCarousel = async () => {
+  return await getDbJson('conteudoSugerido');
 }
 
 window.onload = async () => {
     const data = await perfil();
     const repos = await repositorios();
-    const classmates = await loadDb('colegas');
+    const classmates = await getClassmates();
+    const caoruselContent = await getCarousel();
 
-    //Dados do perfil do Git
+//--------------------Dados do perfil do Git-----------------------
     document.getElementById('personName').innerHTML = data.name;
     document.getElementById('nick').innerHTML = data.login;
     document.getElementById('bio').innerHTML = data.bio;
@@ -31,13 +32,13 @@ window.onload = async () => {
     document.getElementById('linkIn').href = `${data.blog}`
     document.getElementById('linkIg').href = `https://www.instagram.com/murilo.am/?hl=pt-br`
 
-    // Cards dos repo
+//------------------Cards dos repositórios---------------------
     function carregarCards(conteudo){
         let content = ''
         for(let i = 0; i < conteudo.length; i++){
             let repositorio = conteudo[i]
             content += 
-            `<a href="webProjects.html">
+            `<a href="repo.html?id=${repositorio.id}">
             <div class="col">
               <div class="card shadow">
                 <div class="card-body" style="background-color: lightgrey">
@@ -56,7 +57,36 @@ window.onload = async () => {
         document.getElementById('repoSession').innerHTML = content;
     }
 
-    //Cards com os colegas de curso
+//----------------Carousel conteúdo sugerido---------------
+    const loadCarousel = (conteudoSugerido) => {
+      let content = ''
+      for(let i = 0; i < conteudoSugerido.length; i++){
+          let conteudo = conteudoSugerido[i]
+          if(i==0){
+          content += 
+            `<div class="carousel-item active">
+            <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>${conteudo.titulo}</h5>
+            <p>${conteudo.descricao}</p>
+            </div>
+            </div>`
+          }
+          else{
+            content += 
+            `<div class="carousel-item">
+            <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+            <div class="carousel-caption d-none d-md-block">
+            <h5>${conteudo.titulo}</h5>
+            <p>${conteudo.descricao}</p>
+            </div>
+            </div>`
+          }
+      }
+      document.getElementById('carousel').innerHTML = content;
+    }
+
+//---------------Cards com os colegas de curso-----------------
     const carregarColegas = (colegas) => {
       let content = ''
       for(let i = 0; i < colegas.length; i++){
@@ -71,7 +101,8 @@ window.onload = async () => {
       }
       document.getElementById('classmatesSession').innerHTML = content;
   }
+carregarCards(repos)
+carregarColegas(classmates);
+loadCarousel(caoruselContent);
 
-  carregarCards(repos)
-  carregarColegas(classmates);
 }
