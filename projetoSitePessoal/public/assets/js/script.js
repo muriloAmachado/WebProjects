@@ -1,5 +1,8 @@
 import { getGitHub } from "../service/service.js";
 import { getRepoGitHub } from "../service/service.js";
+import { getDbJson } from "../service/service.js";
+
+getDbJson();
 
 const perfil = async () => {
     return await getGitHub();
@@ -8,9 +11,14 @@ const repositorios = async () => {
     return await getRepoGitHub();
 }
 
+const loadDb = async () => {
+  return await getDbJson('colegas');
+}
+
 window.onload = async () => {
     const data = await perfil();
     const repos = await repositorios();
+    const classmates = await loadDb('colegas');
 
     //Dados do perfil do Git
     document.getElementById('personName').innerHTML = data.name;
@@ -47,7 +55,23 @@ window.onload = async () => {
         }
         document.getElementById('repoSession').innerHTML = content;
     }
-    carregarCards(repos)
 
-    
+    //Cards com os colegas de curso
+    const carregarColegas = (colegas) => {
+      let content = ''
+      for(let i = 0; i < colegas.length; i++){
+          let colega = colegas[i]
+          content += 
+          `<a href="${colega.linkGithub}">
+          <div style="background-color: lightgrey" class="shadow">
+            <img src="${colega.foto}" alt="">
+            <figcaption>${colega.nome}</figcaption>
+          </div>
+        </a>`
+      }
+      document.getElementById('classmatesSession').innerHTML = content;
+  }
+
+  carregarCards(repos)
+  carregarColegas(classmates);
 }

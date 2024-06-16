@@ -25,6 +25,21 @@ export const getRepoGitHub = async () =>{
     return data;
 }
 
+export const getDbJson = async (e) => {
+    const endpoint = `http://localhost:3000/${e}`
+    const response = await fetch(endpoint);
+    if (!response.ok){
+        console.log("Erro ao carregar os dados.")
+    }
+    else{
+        console.log(response);
+    }
+    const data = await response.json();
+    return data
+}
+
+window.onload = getDbJson();
+
 
 
 
