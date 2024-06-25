@@ -7,8 +7,8 @@ const id = params.get('id');
 window.addEventListener('DOMContentLoaded', async () => {
 
     const repos = await repositorios();
-    const filteredRepo = repos.filter(repo => repo.id == id)
-    const repositorio = filteredRepo[0]
+    const filteredRepo = repos.find(repo => repo.id == id)
+    const repositorio = filteredRepo
 
     const dataCriacao = new Date(repositorio.created_at);
     function formatDate(data){

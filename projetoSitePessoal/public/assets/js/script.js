@@ -41,7 +41,7 @@ window.onload = async () => {
             `<a href="repo.html?id=${repositorio.id}">
             <div class="col">
               <div class="card shadow">
-                <div class="card-body" style="background-color: lightgrey">
+                <div class="card-body" style="background-color: #f1f5f9">
                   <h5 class="card-title">${repositorio.name}</h5>
                   <hr>
                   <p class="card-text">${repositorio.description}</p>
@@ -66,7 +66,7 @@ window.onload = async () => {
           content += 
             `<div class="carousel-item active">
             <a href="${conteudo.linkConteudo}">
-            <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+            <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 65%; max-height: 600px;" alt="s">
             <div class="carousel-caption d-none d-md-block">
             <h5>${conteudo.titulo}</h5>
             <p>${conteudo.descricao}</p>
@@ -77,7 +77,7 @@ window.onload = async () => {
             content += 
             `<div class="carousel-item">
             <a href="${conteudo.linkConteudo}">
-            <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 35%; max-height: 600px;" alt="s">
+            <img src="${conteudo.capa}" class="d-block w-100" style="opacity: 65%; max-height: 600px;" alt="s">
             <div class="carousel-caption d-none d-md-block">
             <h5>${conteudo.titulo}</h5>
             <p>${conteudo.descricao}</p>
@@ -96,7 +96,7 @@ window.onload = async () => {
           let colega = colegas[i]
           content += 
           `<a href="${colega.linkGithub}">
-          <div style="background-color: lightgrey" class="shadow">
+          <div style="background-color: #f1f5f9" class="shadow">
             <img src="${colega.foto}" alt="">
             <figcaption>${colega.nome}</figcaption>
           </div>
